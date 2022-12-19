@@ -1,13 +1,13 @@
+ped = cache.ped
 
 RegisterCommand('c', function(source, args, rawCommand)
-	local coords = GetEntityCoords(PlayerPedId())
-	lib.setClipboard(""..coords.x..","..coords.y..","..coords.z.."")
+	local coords = GetEntityCoords(ped)
+	lib.setClipboard(tostring(coords))
 end)
 
 
 RegisterCommand('ch', function(source, args, rawCommand)
-	local coords = GetEntityCoords(PlayerPedId())
-	local heading = GetEntityHeading(PlayerPedId())
-	lib.setClipboard(""..coords.x..","..coords.y..","..coords.z..","..heading.."")
+	local coords = GetEntityCoords(ped)
+	local heading = GetEntityHeading(ped)
+	lib.setClipboard(tostring("" ..coords.x.."," ..coords.y.."," ..coords.z.."," ..heading..""))
 end)
-
