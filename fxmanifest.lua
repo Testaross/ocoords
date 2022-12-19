@@ -1,14 +1,9 @@
-fx_version 'bodacious'
+fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
-ui_page 'html/index.html'
-
+shared_script '@ox_lib/init.lua'
 
 client_script 'client.lua'
 
-files {
-	'html/index.html',
-	'html/jquery.js',
-	'html/init.js',
-}
+
