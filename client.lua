@@ -1,4 +1,4 @@
-ped = cache.ped
+ped = PlayerPedId()
 
 RegisterCommand('c', function(source, args, rawCommand)
 	local coords = GetEntityCoords(ped)
